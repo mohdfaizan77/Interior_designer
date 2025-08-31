@@ -8,11 +8,11 @@ app.use(express.static("public"));
 
 // Optional: Serve your website.html at root URL
 app.get("/interior", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "website.html"));
+  res.sendFile(path.join(__dirname, "public", "interior.html"));
 });
 
 app.get("/rishijwellers", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "website.html"));
+  res.sendFile(path.join(__dirname, "public", "rishi_jwellers.html"));
 });
 
 // Start server
