@@ -7,7 +7,11 @@ const PORT = 3000;
 app.use(express.static("public"));
 
 // Optional: Serve your website.html at root URL
-app.get("/", (req, res) => {
+app.get("/interior", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "website.html"));
+});
+
+app.get("/rishijwellers", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "website.html"));
 });
 
